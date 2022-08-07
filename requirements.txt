@@ -1,7 +1,7 @@
 -e ./fairseq/
 opencv-python
 opencv-python-headless
-libgl1
+ffmpeg libsm6 libxext6 anycodings_deepnote libgl1-mesa-dev
 timm
 ftfy==6.0.3
 tensorboardX==2.4.1
