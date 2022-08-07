@@ -1,5 +1,6 @@
 import streamlit as st 
 from PIL import Image
+import cv2
 import io
 from googletrans import Translator
 from gtts import gTTS
