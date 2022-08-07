@@ -3,14 +3,14 @@
 # This source code is licensed under the Apache 2.0 license 
 # found in the LICENSE file in the root directory.
 
-import cv2
+#import cv2
 import numpy as np
 
 ## aug functions
 def identity_func(img):
     return img
 
-
+"""
 def autocontrast_func(img, cutoff=0):
     '''
         same output as PIL.ImageOps.autocontrast
@@ -112,7 +112,7 @@ def color_func(img, factor):
 
 def contrast_func(img, factor):
     """
-        same output as PIL.ImageEnhance.Contrast
+    #    same output as PIL.ImageEnhance.Contrast
     """
     mean = np.sum(np.mean(img, axis=(0, 1)) * np.array([0.114, 0.587, 0.299]))
     table = np.array([(
@@ -310,7 +310,7 @@ arg_dict = {
     'ShearY': shear_level_to_args(MAX_LEVEL, replace_value),
 }
 
-
+"""
 class RandomAugment(object):
 
     def __init__(self, N=2, M=10, isPIL=False, augs=[]):
