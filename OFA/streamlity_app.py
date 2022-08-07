@@ -1,17 +1,16 @@
 import streamlit as st 
 from PIL import Image
 import io
-from googletrans import Translator
-from gtts import gTTS
 import torch
 import numpy as np
-from models.ofa import OFAModel
-from PIL import Image
+from gtts import gTTS
+from googletrans import Translator
 from fairseq import utils,tasks
 from fairseq import checkpoint_utils
-from utils.eval_utils import eval_step
-from tasks.mm_tasks.caption import CaptionTask
 from torchvision import transforms
+from tasks.mm_tasks.caption import CaptionTask
+from utils.eval_utils import eval_step
+from models.ofa import OFAModel
 
 #############################################################################################
 @st.cache(suppress_st_warning=True , allow_output_mutation=True)
