@@ -3,6 +3,7 @@ from PIL import Image
 import io
 import torch
 import numpy as np
+import cv2
 from fairseq import utils,tasks
 from fairseq import checkpoint_utils
 from torchvision import transforms
