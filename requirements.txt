@@ -1,6 +1,6 @@
 -e ./fairseq/
 opencv-python-headless==4.5.3.56
-libgl1
+libgl1-mesa-glx
 ffmpeg libsm6 libxext6 -y
 timm
 ftfy==6.0.3
