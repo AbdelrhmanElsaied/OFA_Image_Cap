@@ -9,8 +9,8 @@ from torchvision import transforms
 from tasks.mm_tasks.caption import CaptionTask
 from utils.eval_utils import eval_step
 from models.ofa import OFAModel
-from gtts import gTTS
 from googletrans import Translator
+from gtts import gTTS
 
 #############################################################################################
 @st.cache(suppress_st_warning=True , allow_output_mutation=True)
