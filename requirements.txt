@@ -1,5 +1,8 @@
 -e ./fairseq/
 opencv-python
+ffmpeg libsm6 libxext6  -y
+opencv-python-headless
+libgl1
 timm
 ftfy==6.0.3
 tensorboardX==2.4.1
