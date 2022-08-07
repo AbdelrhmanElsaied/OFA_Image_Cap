@@ -3,14 +3,14 @@ from PIL import Image
 import io
 import torch
 import numpy as np
-from gtts import gTTS
-from googletrans import Translator
 from fairseq import utils,tasks
 from fairseq import checkpoint_utils
 from torchvision import transforms
 from tasks.mm_tasks.caption import CaptionTask
 from utils.eval_utils import eval_step
 from models.ofa import OFAModel
+from gtts import gTTS
+from googletrans import Translator
 
 #############################################################################################
 @st.cache(suppress_st_warning=True , allow_output_mutation=True)
