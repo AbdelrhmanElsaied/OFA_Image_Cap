@@ -4,7 +4,6 @@ import io
 import torch
 import numpy as np
 import cv2
-import wget
 from fairseq import utils,tasks
 from fairseq import checkpoint_utils
 from torchvision import transforms
@@ -13,12 +12,17 @@ from models.ofa import OFAModel
 from gtts import gTTS
 from googletrans import Translator
 from tasks.mm_tasks.caption import CaptionTask
+import wget
+
 
 
 
 #############################################################################################
 @st.cache(suppress_st_warning=True , allow_output_mutation=True)
 def load_model():
+    
+    filename = wget.download('https://ofa-silicon.oss-us-west-1.aliyuncs.com/checkpoints/caption_large_best_clean.pt', out="checkpoints/caption.pt")
+    
     # Register caption task
     tasks.register_task('caption',CaptionTask)
 
