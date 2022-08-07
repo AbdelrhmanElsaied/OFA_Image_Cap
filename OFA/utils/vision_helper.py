@@ -6,11 +6,11 @@
 #import cv2
 import numpy as np
 
+"""
 ## aug functions
 def identity_func(img):
     return img
 
-"""
 def autocontrast_func(img, cutoff=0):
     '''
         same output as PIL.ImageOps.autocontrast
@@ -312,7 +312,7 @@ arg_dict = {
 
 """
 class RandomAugment(object):
-
+    
     def __init__(self, N=2, M=10, isPIL=False, augs=[]):
         self.N = N
         self.M = M
