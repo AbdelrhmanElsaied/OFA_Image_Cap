@@ -10,7 +10,7 @@ import os
 import math
 import pickle
 from typing import Optional
-from file_dataset import FileDataset
+from data.file_dataset import FileDataset
 
 import torch
 from fairseq import metrics
