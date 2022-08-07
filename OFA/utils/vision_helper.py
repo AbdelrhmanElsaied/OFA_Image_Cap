@@ -111,8 +111,9 @@ def color_func(img, factor):
 
 
 def contrast_func(img, factor):
+    same output as PIL.ImageEnhance.Contrast
     """
-    #    same output as PIL.ImageEnhance.Contrast
+        
     """
     mean = np.sum(np.mean(img, axis=(0, 1)) * np.array([0.114, 0.587, 0.299]))
     table = np.array([(
